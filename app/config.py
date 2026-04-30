@@ -21,3 +21,6 @@ USER_COLORS = [
     "#4955f5", "#e8553d", "#15b25e", "#ff8c00", "#722ed1",
     "#08979c", "#d46b08", "#1d39c4", "#cf1322", "#389e0d",
 ]
+
+# Mock 数据模式（Render 部署时自动启用，因为无法访问内网 API）
+USE_MOCK_DATA = os.getenv("USE_MOCK_DATA", "true").lower() == "true"
